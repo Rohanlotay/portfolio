@@ -1,1 +1,15 @@
+<html>
+  <head>
+    <title>Test Portfoilio</title>
+  </head>
+  <body>
+    <div id="data"></div>
 
+    <script>
+      fetch('data.json')
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
+    </script>
+  </body>
+</html>
